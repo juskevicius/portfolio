@@ -168,10 +168,6 @@
   }
 }
 
-
-
-@import url(https://fonts.googleapis.com/css?family=Lobster);
-
 html, body {
   height: 100%;
   width: 100%;
@@ -397,6 +393,8 @@ nav li.active a .underline {color: rgb(92, 92, 61);}
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: white;
+  padding-bottom: 0px;
+  position: relative;
 }
 
 #whoIam {
@@ -489,7 +487,16 @@ nav li.active a .underline {color: rgb(92, 92, 61);}
 }
 
 .contact img {
-  height: 30px;
+  transform: scale(0.95);
+}
+
+.contact img:hover {
+  transform: scale(1.10);
+}
+
+.contact {
+  position: absolute;
+  bottom: 0px;
 }
 
 

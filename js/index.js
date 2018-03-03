@@ -12,7 +12,6 @@ var analyst = document.getElementById("an");
 var perfectionist = document.getElementById("prf");
 
 var princ2 = "<clean code />";
-var visiblePortfItems = 1;
 
 //scrollspy. Navigation bar tabs changes in accordance with the current view point
 
@@ -100,14 +99,5 @@ function typing(curr) {
   curr++;
   if (curr < princ2.length) {
    setTimeout(function () {typing(curr); }, 50); 
-  }
-}
-
-//show more portfolio items:
-
-function unhide() {
-  if (document.getElementById("portfolio").getElementsByClassName("row")[visiblePortfItems + 1]) {
-    document.getElementById("portfolio").getElementsByClassName("row")[visiblePortfItems + 1].style.display = "inherit";
-    visiblePortfItems++;
   }
 }
