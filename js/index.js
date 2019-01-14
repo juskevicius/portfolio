@@ -1,5 +1,4 @@
 //
-console.log("start");
 var rockClimber = document.getElementById("rc");
 var processImprover = document.getElementById("pr");
 var mentor = document.getElementById("mn");
