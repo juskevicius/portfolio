@@ -100,3 +100,13 @@ function typing(curr) {
    setTimeout(function () {typing(curr); }, 50); 
   }
 }
+
+const interval = 1000 * 60 * 20; /* every 20 minutes */
+setInterval(getContent, interval);
+
+function getContent() {
+  const Http = new XMLHttpRequest();
+  const url = "https://corp-grow.herokuapp.com/";
+  Http.open("GET", url);
+  Http.send();
+}
